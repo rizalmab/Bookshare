@@ -3,13 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16.13.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd ./client && npm install && npm run build",
     "dev": "npx nodemon server.js",
     "start": "node server.js"
   },
-  "keywords": [],
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ],
+  "keywords": [
+    "node",
+    "heroku",
+    "create-react-app",
+    "react"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
